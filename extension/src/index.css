@@ -1,0 +1,202 @@
+html {
+	padding: 0;
+	margin-top: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.app {
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 24px;
+	background: #fff;
+	z-index: 999;
+}
+main {
+	padding: 24px;
+	width: auto;
+	height: auto;
+}
+
+dialog {
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+.container_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.container_header_logo {
+	width: 132px;
+	height: 28px;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 8px;
+	display: inline-flex;
+}
+.container_header_logo img {
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+}
+.container_header_logo h1 {
+	color: #120b48;
+	font-size: 16px;
+	font-weight: 700;
+	word-wrap: break-word;
+}
+.container_header_icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 52px;
+}
+.container_p {
+	width: 225px;
+	color: #413c6d;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 1rem 0rem;
+}
+.container_record-options {
+	height: 56px;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+}
+.container_record-options_full img,
+.container_record-options_tab img {
+	width: 32px;
+	height: 32px;
+}
+.container_record-options_full,
+.container_record-options_tab {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.container_record-options_full span,
+.container_record-options_tab span {
+	color: #928fab;
+	font-size: 14px;
+	font-weight: 500;
+}
+.container_permission_camera,
+.container_permission_mic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 252px;
+	height: 48px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 12px;
+	border: 1px #100a42 solid;
+	margin: 1rem 0rem;
+}
+.container_permission_camera span,
+.container_permission_mic span {
+	display: flex;
+	align-items: center;
+	width: 85px;
+	padding-left: 16px;
+	color: #100a42;
+	font-size: 14px;
+	font-weight: 500;
+}
+.container_permission_camera span img,
+.container_permission_mic span img {
+	margin-right: 8px;
+}
+.container_permission_camera div,
+.container_permission_mic div {
+	padding-right: 16px;
+}
+.container_button {
+	width: 252px;
+	height: 51px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.container_button button {
+	color: #fafdff;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 16px;
+	background: #120b48;
+	border-radius: 12px;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+/*-----------------------SLIDER start-------------------*/
+/* toggle in label designing */
+.toggle1,
+.toggle2 {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 20px;
+	background-color: #d8d8d8;
+	border-radius: 30px;
+	border: 1px solid #100a42;
+	cursor: pointer;
+}
+
+/* After slide changes */
+.toggle1:after,
+.toggle2::after {
+	content: "";
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #fff;
+	top: 1px;
+	left: 1px;
+	transition: all 0.5s;
+}
+
+/* Checkbox checked effect */
+.checkbox1:checked + .toggle1::after,
+.checkbox2:checked + .toggle2::after {
+	left: 17px;
+}
+
+/* Checkbox checked toggle label bg color */
+.checkbox1:checked + .toggle1,
+.checkbox2:checked + .toggle2 {
+	background-color: #100a42;
+}
+
+/* Checkbox vanished */
+.checkbox1,
+.checkbox2 {
+	display: none;
+}
+/*-------------------SLIDER end-----------------------*/
+
+.widget {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+}
+
+.widget button {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	border: 1px solid #100a42;
+	background: #100a42;
+	color: #fff;
+	cursor: pointer;
+}

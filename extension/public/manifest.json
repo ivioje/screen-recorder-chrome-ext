@@ -1,0 +1,32 @@
+{
+	"manifest_version": 3,
+	"name": "HelpMeOut",
+	"description": "A chrome extension screen recorder - vanilla",
+	"icons": {
+		"128": "/assets/images/icon128.png"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+
+	"action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"16": "/assets/images/icon16.png",
+			"48": "/assets/images/icon48.png",
+			"128": "/assets/images/icon128.png"
+		}
+	},
+
+	"host_permissions": ["http://*/", "https://*/*"],
+
+	"permissions": [
+		"scripting",
+		"tabs",
+		"activeTab",
+		"audioCapture",
+		"videoCapture"
+	],
+
+	"version": "1.0.0"
+}
